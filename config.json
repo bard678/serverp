@@ -1,0 +1,16 @@
+{
+    "responses": {
+      "hello": "Hello! How can I assist you today?",
+      "hi": "Hi there! What can I do for you?",
+      "how are you": "I'm just a bot, but I'm doing great! How about you?",
+      "what is your name": "I'm a professional Python chatbot. You can call me ProBot!",
+      "what can you do": "I can chat with you, answer questions, and help you with various tasks!",
+      "tell me a joke": "Why don't scientists trust atoms? Because they make up everything!",
+      "bye": "Goodbye! Have a wonderful day!",
+      "default": "I'm sorry, I don't understand that. Can you rephrase or ask something else?"
+    },
+    "settings": {
+      "similarity_threshold": 0.2,
+      "log_file": "logs/chatbot.log"
+    }
+  }

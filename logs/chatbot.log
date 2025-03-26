@@ -1,0 +1,23 @@
+2025-01-29 15:42:27 - Error generating response: 'ChatBot' object has no attribute 'responses'
+2025-01-29 15:42:27 - User: hi | ChatBot: Oops! Something went wrong. Please try again.
+2025-01-29 15:46:00 - Error generating response: 'ChatBot' object has no attribute 'responses'
+2025-01-29 15:46:00 - User: hi | ChatBot: Oops! Something went wrong. Please try again.
+2025-01-29 15:46:06 - Error generating response: 'ChatBot' object has no attribute 'responses'
+2025-01-29 15:46:06 - User: hello | ChatBot: Oops! Something went wrong. Please try again.
+2025-01-29 15:48:15 - Error generating response: 'ChatBot' object has no attribute 'responses'
+2025-01-29 15:48:15 - User: hi | ChatBot: Oops! Something went wrong. Please try again.
+2025-01-29 15:48:31 - Error generating response: 'ChatBot' object has no attribute 'responses'
+2025-01-29 15:48:31 - User: hi | ChatBot: Oops! Something went wrong. Please try again.
+2025-01-29 15:51:52 - User: hi | ChatBot: Hi there! What can I do for you?
+2025-01-29 15:51:59 - User: hello | ChatBot: Hello! How can I assist you today?
+2025-01-29 15:53:52 - Error generating response: 'ChatBot' object has no attribute 'preprocess'
+2025-01-29 15:53:52 - User: hi | ChatBot: Oops! Something went wrong. Please try again.
+2025-01-29 15:53:55 - Error generating response: 'ChatBot' object has no attribute 'preprocess'
+2025-01-29 15:53:55 - User: hi | ChatBot: Oops! Something went wrong. Please try again.
+2025-01-29 15:54:15 - User: hi | ChatBot: Hi there! What can I do for you?
+2025-01-29 15:54:27 - User: hi | ChatBot: Hi there! What can I do for you?
+2025-01-29 15:54:29 - User: hi | ChatBot: Hi there! What can I do for you?
+2025-01-29 15:54:43 - User: hell | ChatBot: I'm sorry, I don't understand that. Can you rephrase or ask something else?
+2025-01-29 15:54:49 - User: helloo | ChatBot: I'm sorry, I don't understand that. Can you rephrase or ask something else?
+2025-01-29 15:55:05 - User: hiiii | ChatBot: I'm sorry, I don't understand that. Can you rephrase or ask something else?
+2025-01-29 15:55:12 - User: what | ChatBot: I'm sorry, I don't understand that. Can you rephrase or ask something else?
