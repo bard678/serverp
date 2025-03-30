@@ -93,7 +93,8 @@ async function checkEmail(email, res,verificationCode){
   if (!email) {
      res.status(400).json({ msg: "Email is required" });
 }
-
+sendVerificationEmail(email, verificationCode,res);
+return true
 try {
     const response = await axios.get(
         `https://api.emaillistverify.com/api/verifyEmail?secret=2hFZnwx1sQ7CFM7HurJx2&email=${email}`
@@ -106,7 +107,7 @@ try {
     } else {
     
       console.log("Email does not exist")
-         res.status(400).json({ msg: "Email does not exist" });
+       //  res.status(400).json({ msg: "Email does not exist" });
          return false
     }
 } catch (error) {
@@ -207,10 +208,10 @@ function Login(app, db) {
           return res.status(400).send({"msg":"Incorrect password"});
         }
         if(!user.verified){
-          return res.status(400).send({"msg":"Your email is not verified yet.","isVerified":0});
+          return res.status(401).send({"msg":"Your email is not verified yet.","verified":0});
 
         }
-        // Generate Access & Refresh Tokens
+        // Generate Access & Refresh Tokensz
         const accessToken = jsonwebtoken.sign(
           { id: user.id, name: user.name, email: user.email },
           process.env.ACCESS_SECRET,  // Short expiration
