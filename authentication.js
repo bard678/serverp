@@ -194,6 +194,15 @@ function Login(app, db) {
        const isChecked=  await checkEmail(email, res,verificationCode)
       if(isChecked)
         {  
+          const query = 'UPDATE users SET verification_code = ? WHERE email = ?';
+          db.query(query, [verificationCode, email], (err, result) => {
+            if (err) {
+              console.error(err);
+              return res.status(500).send('Error updating user verification code');
+            }
+          
+          });
+          
            // isVerified
        // console.log(isChecked)
      await  completeLogin()

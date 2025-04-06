@@ -9,6 +9,8 @@ import { uploadFile } from './storage.js';
 import { UploadImage, UploadReel } from './upload.js';
 import { Login, RefreshToken, Register, VerifyEmail,ResendCode } from './authentication.js';
 import { LoadPosts, LoadShorts } from './home_page.js';
+import { UploadNotes } from './notes/postNotes.js';
+import { GetNotes } from './notes/getNotes.js';
 // Initialize Express
 const app = express();
 app.use(cors());
@@ -29,6 +31,8 @@ const db = mysql.createPool({
 // Connect to MySQL
 ResendCode(app,db)
 UploadImage(app,db);
+UploadNotes(app,db);
+GetNotes(app,db)
 UploadReel(app,db);
 //{"/login"}
 Login(app,db);
